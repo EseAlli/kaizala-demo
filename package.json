@@ -1,0 +1,25 @@
+{
+    "schemaVersion":1,
+    "id" : "co.ese",
+    "version": "1",
+    "displayName": "Feedback Form",
+    "description": "A simple Feedback form",
+    "providerName": "Ese Inc",
+    "icon" :"icon.png",    
+    "appModel":"appModel.json",
+    "views":{
+        "CreationView": { 
+                "labelHeader": "Account Opening", 
+                "sourceLocation": "ResponseView.html" 
+         },
+        "ChatCanvasCardView": { 
+            "labelResponded": "You have completed the registration", 
+            "labelRespondToForm": "Registration complete", 
+            "isResponseEditable": false 
+        },
+        "ResponseViewResult":{
+            "labelPageHeader":"Summary", 
+            "sourceLocation": "SummaryView.html"
+        }
+    }
+}
